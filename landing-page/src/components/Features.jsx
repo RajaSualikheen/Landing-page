@@ -1,5 +1,6 @@
 import React from "react";
-import "../styless/Features.css"; // Adjust the path as necessary
+import "../styless/Features.css";
+import features from '../assets/features.png';// Adjust the path as necessary
 
 const Features = () => {
   return (
@@ -13,7 +14,7 @@ const Features = () => {
           <li>✔ Time-Saving</li>
         </ul>
         <div className="features__image">
-          <img src="./src/assets/features.png" alt="Laptop and Mobile UI" />
+          <img src={features} alt="Laptop and Mobile UI" />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styless/Hero.css'; // Adjust the path as necessary
+import '../styless/Hero.css'; 
+import heroImage from '../assets/hero-img.png';// Adjust the path as necessary
  // replace with your image path
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
           <a href="#get-kit" className="hero__btn">Get the Kit &gt;</a>
         </div>
         <div className="hero__image">
-          <img src="./src/assets/hero-img.png" alt="Code Screenshot" />
+          <img src={heroImage} alt="Code Screenshot" />
         </div>
       </section>
   );

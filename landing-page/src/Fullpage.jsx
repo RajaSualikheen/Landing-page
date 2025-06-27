@@ -1,23 +1,44 @@
 import React from 'react';
 import './FullPage.css';
+import features from './assets/features.png';
+import heroImage from './assets/hero-img.png';
+import { useState } from 'react'; // Adjust the path as necessary
  // replace with your image path
 
 const FullPage = () => {
+   const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
   return (
     <div className="page">
 
       {/* === Navbar === */}
-      <header className="navbar">
-        <div className="navbar__logo">
-          <span className="logo-box">C</span> Duyxit
-        </div>
-        <nav className="navbar__links">
-          <a href="#features">Home</a>
-          <a href="#components">Components</a>
-          <a href="#about">About</a>
-          <a href="#buy" className="nav-buy-link">Buy Now</a>
-        </nav>
-      </header>
+<header className="navbar">
+      <div className="navbar__logo">
+        <span className="logo-box">C</span> Duyxit
+      </div>
+      
+      {/* Hamburger Button */}
+      <button 
+        className={`hamburger ${isOpen ? 'hamburger--active' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Menu"
+      >
+        <span className="hamburger__line"></span>
+        <span className="hamburger__line"></span>
+        <span className="hamburger__line"></span>
+      </button>
+      
+      {/* Navigation Links */}
+      <nav className={`navbar__links ${isOpen ? 'navbar__links--active' : ''}`}>
+        <a href="#features" onClick={() => setIsOpen(false)}>Home</a>
+        <a href="#components" onClick={() => setIsOpen(false)}>Components</a>
+        <a href="#about" onClick={() => setIsOpen(false)}>About</a>
+        <a href="#buy" className="nav-buy-link" onClick={() => setIsOpen(false)}>Buy Now</a>
+      </nav>
+    </header>
 
       {/* === Hero Section === */}
       <section className="hero">
@@ -29,7 +50,7 @@ const FullPage = () => {
           <a href="#get-kit" className="hero__btn">Get the Kit &gt;</a>
         </div>
         <div className="hero__image">
-          <img src="./src/assets/test.png" alt="Code Screenshot" />
+          <img src={heroImage} alt="Code Screenshot" />
         </div>
       </section>
 
@@ -45,7 +66,7 @@ const FullPage = () => {
       <li>✔ Time-Saving</li>
     </ul>
     <div className="features__image">
-      <img src="./src/assets/hero.png" alt="Laptop and Mobile UI" />
+      <img src={features} alt="Laptop and Mobile UI" />
     </div>
   </div>
 </section>
