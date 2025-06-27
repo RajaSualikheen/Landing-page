@@ -1,0 +1,62 @@
+.pricing {
+  background-color: #151515;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.pricing-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid #292929;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.pricing-subtext {
+  color: #bbb;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #EB5757;
+  margin-bottom: 0.5rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.note {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #EB5757;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #d84343;
+}

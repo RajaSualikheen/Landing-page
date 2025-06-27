@@ -1,0 +1,71 @@
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #111;
+  gap: 2rem;
+}
+
+.testimonial__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.testimonial {
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.testimonial .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  color: #EB5757;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial strong {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.testimonial__right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.testimonial__right h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  color: #111;
+}
+
+.testimonial__right ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.testimonial__right li::before {
+  content: "✔";
+  color: #EB5757;
+  margin-right: 0.5rem;
+}

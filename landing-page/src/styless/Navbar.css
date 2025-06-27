@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2rem;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+}
+
+.navbar__logo {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-box {
+  background-color: #EB5757;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+  align-items: center;
+}
+.navbar__links a:hover {
+  color: #EB5757;
+   transform: translatex(-3px);
+
+  
+}
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+
+.nav-buy-link {
+  background: #EB5757;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.nav-buy-link:hover {
+ transform: translatex(-3px);
+    box-shadow: 0 10px 20px rgba(255, 251, 251, 0.2);
+    color: #EB5757;
+    background-color: white;
+}
