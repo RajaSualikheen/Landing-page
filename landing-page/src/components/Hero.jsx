@@ -14,7 +14,7 @@ const Hero = () => {
           <a href="#get-kit" className="hero__btn">Get the Kit &gt;</a>
         </div>
         <div className="hero__image">
-          <img src={heroImage} alt="Code Screenshot" />
+          <img src={heroImage} alt="Code Screenshot" loading="lazy" />
         </div>
       </section>
   );

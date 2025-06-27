@@ -14,7 +14,7 @@ const Features = () => {
           <li>✔ Time-Saving</li>
         </ul>
         <div className="features__image">
-          <img src={features} alt="Laptop and Mobile UI" />
+          <img src={features} alt="Laptop and Mobile UI" loading="lazy" />
         </div>
       </div>
     </section>
